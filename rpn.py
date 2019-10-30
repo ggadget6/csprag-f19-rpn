@@ -1,22 +1,11 @@
 #!/usr/bin/env python3
 
-def add(a, b):
-    return a + b
-
-def sub(a, b):
-    return a - b
-
-def mult(a, b):
-    return a * b
-
-def exp(a, b):
-    return a ** b
-
+import operator
 operators = {
-    '+': add,
-    '-': sub,
-    '*': mult,
-    '^': exp,
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+    '^': operator.pow,
 }
 def calculate(arg):
     stack = list()
